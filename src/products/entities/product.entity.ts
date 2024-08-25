@@ -25,7 +25,7 @@ export class Product {
 
   @OneToMany(() => SaleDetail, saleDetail => saleDetail.product)
   saleDetail: SaleDetail[];
-  
+
   @CreateDateColumn({ type: 'timestamp' })
   created_at: Date;
 
